@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/test/_next/static/css/8579c4287a58b810.css" data-precedence="next"/><link rel="stylesheet" href="/test/_next/static/css/ce90c4206395b4a9.css" data-precedence="next"/><link rel="stylesheet" href="/test/_next/static/css/f8ca774482f3c2cc.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/test/_next/static/chunks/webpack-62f207c7777ca9db.js"/><script src="/test/_next/static/chunks/fd9d1056-d9c6beefe29fb10d.js" async=""></script><script src="/test/_next/static/chunks/117-43fedde88f017f71.js" async=""></script><script src="/test/_next/static/chunks/main-app-0f3adf8e77f89c40.js" async=""></script><script src="/test/_next/static/chunks/app/layout-b51a0ad6cf0fab32.js" async=""></script><title>ADOのデータ型 | VBScriptさんま屋</title><meta name="description" content="VBScriptの個人的なメモです"/><meta property="og:title" content="ADOのデータ型"/><meta property="og:description" content="VBScriptの個人的なメモです"/><meta property="og:image" content="https://www.sammaya.jp/test/assets/img/stars.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="ADOのデータ型"/><meta name="twitter:description" content="VBScriptの個人的なメモです"/><meta name="twitter:image" content="https://www.sammaya.jp/test/assets/img/stars.jpg"/><link rel="apple-touch-icon" sizes="180x180" href="/test/favicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/test/favicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/test/favicon/favicon-16x16.png"/><link rel="manifest" href="/test/favicon/site.webmanifest"/><link rel="mask-icon" href="/test/favicon/safari-pinned-tab.svg" color="#000000"/><link rel="shortcut icon" href="/test/favicon/favicon.ico"/><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-config" content="/test/favicon/browserconfig.xml"/><meta name="theme-color" content="#000"/><link rel="alternate" type="application/rss+xml" href="/test/feed.xml"/><script src="/test/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_d8d0ad dark:bg-slate-900 dark:text-slate-400"><script>(e=>{let[t,n,r]=["system","dark","light"],i=()=>{let e=document.createElement("style");return e.textContent="*,*:after,*:before{transition:none !important;}",document.head.appendChild(e),()=>{getComputedStyle(document.body),setTimeout(()=>document.head.removeChild(e),1)}},a=matchMedia(`(prefers-color-scheme: ${n})`);window.updateDOM=()=>{let o=i(),l=localStorage.getItem(e)??t,s=a.matches?n:r,c=l===t?s:l,u=document.documentElement.classList;c===n?u.add(n):u.remove(n),document.documentElement.setAttribute("data-mode",l),o()},window.updateDOM(),a.addEventListener("change",window.updateDOM)})('nextjs-blog-starter-theme')</script><button class="switch_switch__v3CFJ"></button><header class="border-b border-neutral-200 dark:bg-stars"><div class="container px-8"><div class="py-16 flex flex-col lg:flex-row items-center"><h2 class="text-2xl lg:text-4xl font-bold tracking-tight lg:tracking-tighter leading-tight lg:w-1/3"><a href="/test" class="hover:underline">VBScriptさんま屋</a>.</h2><h4 class="text-center text-lg">VBScriptの個人的なメモです (´・ω・`)</h4></div></div></header><div class="min-h-1/2"><main><div class="container px-8"><div class="lg:flex py-2"><div class="sidebar overflow-x-visible lg:border-r lg:overflow-y-scroll py-4 min-w-80 lg:w-1/5"><nav><input id="ac-toc" type="checkbox" class="peer/toc hidden"/><label for="ac-toc" class="   accodiontoc mb-1   relative before:absolute after:absolute    z-10 after:z-11 before:z-12   peer-checked/toc:hover:after:-rotate-90   peer-checked/toc:bg-[#333]   peer-checked/toc:text-white   peer-checked/toc:before:bg-white   peer-checked/toc:after:bg-white   after:duration-300   py-2 pl-4 pr-10    text-xs font-bold   border border-solid rounded   border-white hover:border-[#bdc1c4]   inline-block   text-[#7a8288] hover:text-white   hover:bg-[#333]   before:content-[&#x27;&#x27;] after:content-[&#x27;&#x27;]   before:w-2.5 before:h-0.5 after:w-0.5 after:h-2.5   before:right-4 before:top-4 after:right-5  after:top-3   before:bg-[#7a8288] after:bg-[#7a8288]   hover:after:bg-white hover:before:bg-white   lg:hidden   ">メニュー</label><div class="hidden lg:block peer-checked/toc:block mt-8 lg:mt-4"><section><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/helloworld" class="hover:underline">Hello, World!と表示させる</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/msgbox" class="hover:underline">MsgBox関数</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/inputbox" class="hover:underline">InputBox関数</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/array" class="hover:underline">配列(1) 配列の作り方</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/filter" class="hover:underline">配列(2) 配列の操作</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/rename" class="hover:underline">ファイル名の頭に日付を加える</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/fso" class="hover:underline">FileSystemObjectオブジェクト</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/path" class="hover:underline">ファイル名、パス名を取得する</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/file" class="hover:underline">File、Folder、Driveオブジェクト</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/filelist" class="hover:underline">ファイル一覧を取得する</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/textstream" class="hover:underline">TextStreamオブジェクト</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/mdb1" class="hover:underline">Access形式データベースへの接続（1）</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/mdb2" class="hover:underline">Access形式データベースへの接続（2）</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/stream" class="hover:underline">Streamオブジェクト</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/adox" class="hover:underline">ADOXの説明</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/mnist" class="hover:underline">バイナリファイルを読む</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/fldtype" class="hover:underline">ADOのデータ型</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/class" class="hover:underline">クラスを自作する</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/calender1" class="hover:underline">カレンダー計算(1) </a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/encoder" class="hover:underline">VBScriptの暗号化</a></h3></div><div><h3 class="text-lg mb-3 leading-snug"><a href="/test/calender2" class="hover:underline">カレンダー計算(2) </a></h3></div></section></div></nav></div><article class="mb-32 pt-6 lg:px-6"><h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-left">ADOのデータ型</h1><div class="mb-6 text-lg"><time dateTime="2024-10-31T00:00:00.000Z">2024/10/31</time></div><div class="markdown-styles_markdown__ORfR8"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#概要">概要</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#データ型の一覧">データ型の一覧</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#各データ型のdefinedsizeを確認してみる">各データ型のDefinedSizeを確認してみる</a></li></ol></nav><h2 id="概要">概要</h2>
+<h2 id="データ型の一覧">データ型の一覧</h2>
+<p>使用頻度が高いのは下表の太字かな。</p>
+<table>
+<thead>
+<tr>
+<th>定数</th>
+<th>値</th>
+<th>サイズ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>adEmpty</td>
+<td>0</td>
+<td></td>
+<td>EMPTY?</td>
+</tr>
+<tr>
+<td>adSmallInt</td>
+<td>2</td>
+<td>2バイト</td>
+<td>符号付き整数<br/>(VBScriptのIntegerに相当)</td>
+</tr>
+<tr>
+<td><strong>adInteger</strong></td>
+<td><strong>3</strong></td>
+<td><strong>4バイト</strong></td>
+<td><strong>符号付き整数<br/>(VBScriptのLongに相当)</strong></td>
+</tr>
+<tr>
+<td>adSIngle</td>
+<td>4</td>
+<td>4バイト</td>
+<td>単精度浮動小数点型</td>
+</tr>
+<tr>
+<td><strong>adDouble</strong></td>
+<td><strong>5</strong></td>
+<td><strong>8バイト</strong></td>
+<td><strong>倍精度浮動小数点型</strong></td>
+</tr>
+<tr>
+<td>adCurrency</td>
+<td>6</td>
+<td>8バイト</td>
+<td>通貨型<br/>(小数点以下4桁の固定小数点型)</td>
+</tr>
+<tr>
+<td><strong>adDate</strong></td>
+<td><strong>7</strong></td>
+<td><strong>8バイト</strong></td>
+<td><strong>日付/時刻型</strong></td>
+</tr>
+<tr>
+<td>adBSTR</td>
+<td>8</td>
+<td></td>
+<td>Unicode文字列</td>
+</tr>
+<tr>
+<td>adError</td>
+<td>10</td>
+<td>4バイト</td>
+<td>エラーコード</td>
+</tr>
+<tr>
+<td><strong>adBoolean</strong></td>
+<td><strong>11</strong></td>
+<td><strong>2バイト</strong></td>
+<td><strong>ブール値</strong></td>
+</tr>
+<tr>
+<td>adDecimal</td>
+<td>14</td>
+<td>16バイト</td>
+<td>正確な数値</td>
+</tr>
+<tr>
+<td>adTinyInt</td>
+<td>16</td>
+<td>1バイト</td>
+<td>符号付き整数</td>
+</tr>
+<tr>
+<td>adUnsignedTinyInt</td>
+<td>17</td>
+<td>1バイト</td>
+<td>符号なし整数</td>
+</tr>
+<tr>
+<td>adUnsignedSmallInt</td>
+<td>18</td>
+<td>2バイト</td>
+<td>符号なし整数</td>
+</tr>
+<tr>
+<td>adUnsignedInt</td>
+<td>19</td>
+<td>4バイト</td>
+<td>符号なし整数</td>
+</tr>
+<tr>
+<td>adBigInt</td>
+<td>20</td>
+<td>8バイト</td>
+<td>符号付き整数</td>
+</tr>
+<tr>
+<td>adUnsignedBigInt</td>
+<td>21</td>
+<td>8バイト</td>
+<td>符号なし整数</td>
+</tr>
+<tr>
+<td>adFileTime</td>
+<td>64</td>
+<td>8バイト</td>
+<td>1601年1月1日からの時間</td>
+</tr>
+<tr>
+<td>adGUID</td>
+<td>72</td>
+<td>16バイト</td>
+<td>GUID、オートナンバー型</td>
+</tr>
+<tr>
+<td>adBinary</td>
+<td>128</td>
+<td></td>
+<td>バイナリ値</td>
+</tr>
+<tr>
+<td>adChar</td>
+<td>129</td>
+<td></td>
+<td>文字列</td>
+</tr>
+<tr>
+<td>adWChar</td>
+<td>130</td>
+<td></td>
+<td>Unicode文字列</td>
+</tr>
+<tr>
+<td>adNumeric</td>
+<td>131</td>
+<td>19バイト</td>
+<td>正確な数値</td>
+</tr>
+<tr>
+<td>adUserDefined</td>
+<td>132</td>
+<td></td>
+<td>ユーザ定義</td>
+</tr>
+<tr>
+<td>adDBDate</td>
+<td>133</td>
+<td>6バイト</td>
+<td>日付</td>
+</tr>
+<tr>
+<td>adDBTime</td>
+<td>134</td>
+<td>6バイト</td>
+<td>時刻</td>
+</tr>
+<tr>
+<td>adDBTimeStamp</td>
+<td>135</td>
+<td>16バイト</td>
+<td>日付/時刻</td>
+</tr>
+<tr>
+<td>adChapter</td>
+<td>136</td>
+<td></td>
+<td>チャプター値</td>
+</tr>
+<tr>
+<td>adPropVariant</td>
+<td>138</td>
+<td></td>
+<td>PROPVARIANT</td>
+</tr>
+<tr>
+<td>adVarNumeric</td>
+<td>139</td>
+<td></td>
+<td>数値<br/>(Parameterオブジェクト)</td>
+</tr>
+<tr>
+<td>adVarChar</td>
+<td>200</td>
+<td></td>
+<td>文字列</td>
+</tr>
+<tr>
+<td>adLongVarChar</td>
+<td>201</td>
+<td></td>
+<td>長い文字列</td>
+</tr>
+<tr>
+<td><strong>adVarWChar</strong></td>
+<td><strong>202</strong></td>
+<td></td>
+<td><strong>Unicode文字列</strong></td>
+</tr>
+<tr>
+<td><strong>adLongVarWChar</strong></td>
+<td><strong>203</strong></td>
+<td></td>
+<td><strong>長いUnicode文字列</strong></td>
+</tr>
+<tr>
+<td>adVarBinary</td>
+<td>204</td>
+<td></td>
+<td>バイナリ値<br/>(Parameterオブジェクト)</td>
+</tr>
+<tr>
+<td>adLongVarBinary</td>
+<td>205</td>
+<td></td>
+<td>ロングバイナリ値</td>
+</tr>
+</tbody>
+</table>
+<h2 id="各データ型のdefinedsizeを確認してみる">各データ型のDefinedSizeを確認してみる</h2>
+<p>動作概要:</p>
+<ol>
+<li>レコードセットを作成</li>
+<li>レコードセットが閉じた状態で各データ型のフィールドを追加</li>
+<li>レコードセットを開く</li>
+<li>レコードが無いとフィールドにアクセスできないので、空のレコードを作成</li>
+<li>フィールドにアクセスしてDefinedSizeを取得</li>
+</ol>
+<pre><code class="hljs language-vbs"><span class="hljs-keyword">Dim</span> rs     <span class="hljs-comment">'レコードセットオブジェクト</span>
+<span class="hljs-keyword">Dim</span> flds   <span class="hljs-comment">'フィールドコレクション</span>
+<span class="hljs-keyword">Dim</span> fld    <span class="hljs-comment">'フィールドオブジェクト</span>
+<span class="hljs-keyword">Dim</span> buf    <span class="hljs-comment">'結果表示用の文字列</span>
+
+<span class="hljs-keyword">Set</span> rs   = <span class="hljs-built_in">CreateObject</span>(<span class="hljs-string">"ADODB.RecordSet"</span>)
+<span class="hljs-keyword">Set</span> flds = rs.Fields
+
+flds.Append <span class="hljs-string">"SmallInt"</span>, <span class="hljs-number">2</span>
+flds.Append <span class="hljs-string">"Integer"</span> , <span class="hljs-number">3</span>
+flds.Append <span class="hljs-string">"Single"</span>  , <span class="hljs-number">4</span>
+flds.Append <span class="hljs-string">"Double"</span>  , <span class="hljs-number">5</span>
+flds.Append <span class="hljs-string">"Currency"</span>, <span class="hljs-number">6</span>
+flds.Append <span class="hljs-string">"Date"</span>    , <span class="hljs-number">7</span>
+flds.Append <span class="hljs-string">"BSTR"</span>, <span class="hljs-number">8</span>
+flds.Append <span class="hljs-string">"Error"</span>, <span class="hljs-number">10</span>
+flds.Append <span class="hljs-string">"Boolean"</span> , <span class="hljs-number">11</span>
+flds.Append <span class="hljs-string">"Decimal"</span>, <span class="hljs-number">14</span>
+flds.Append <span class="hljs-string">"TinyInt"</span>, <span class="hljs-number">16</span>
+flds.Append <span class="hljs-string">"UnsignedTinyInt"</span>, <span class="hljs-number">17</span>
+flds.Append <span class="hljs-string">"UnsignedSmallInt"</span>, <span class="hljs-number">18</span>
+flds.Append <span class="hljs-string">"UnsignedInt"</span>, <span class="hljs-number">19</span>
+flds.Append <span class="hljs-string">"BigInt"</span>  , <span class="hljs-number">20</span>
+flds.Append <span class="hljs-string">"UnsignedBigInt"</span>, <span class="hljs-number">21</span>
+flds.Append <span class="hljs-string">"FileTime"</span>, <span class="hljs-number">64</span>
+flds.Append <span class="hljs-string">"GUID"</span>, <span class="hljs-number">72</span>
+flds.Append <span class="hljs-string">"Numeric"</span>, <span class="hljs-number">131</span>
+flds.Append <span class="hljs-string">"DBDate"</span>, <span class="hljs-number">133</span>
+flds.Append <span class="hljs-string">"DBTime"</span>, <span class="hljs-number">134</span>
+flds.Append <span class="hljs-string">"DBTimeStamp"</span>, <span class="hljs-number">135</span>
+
+rs.Open   <span class="hljs-comment">'開く</span>
+rs.AddNew <span class="hljs-comment">'空のレコードを1件作成</span>
+rs.Update 
+<span class="hljs-keyword">For</span> <span class="hljs-keyword">Each</span> fld <span class="hljs-keyword">In</span> flds
+    buf = buf &#x26; fld.Name &#x26; <span class="hljs-string">", "</span> &#x26; fld.DefinedSize &#x26; vbCr
+<span class="hljs-keyword">Next</span>
+rs.Close  <span class="hljs-comment">'閉じる</span>
+Msgbox buf
+</code></pre>
+<p>adEmptyやadChapterなどはフィールドの作り方がわかりませんでした。</p>
+<h3 id="実行結果">実行結果</h3>
+<p><img src="/vbscript/assets/images/fldtype.jpg" alt="データ型のDefinedSize"></p></div></article></div></div></main></div><footer class="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800"><div class="container px-8"><div class="py-28 flex flex-col lg:flex-row items-center"><h3 class="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">Statically Generated with Next.js.</h3><div class="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2"><a href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates" class="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0">Read Documentation</a><a href="https://github.com/sammaya164/test" class="mx-3 font-bold hover:underline">View on GitHub</a></div></div></div></footer><script src="/test/_next/static/chunks/webpack-62f207c7777ca9db.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/test/_next/static/css/8579c4287a58b810.css\",\"style\"]\n2:HL[\"/test/_next/static/css/ce90c4206395b4a9.css\",\"style\"]\n3:HL[\"/test/_next/static/css/f8ca774482f3c2cc.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"4:I[2846,[],\"\"]\n7:I[4707,[],\"\"]\n9:I[6423,[],\"\"]\na:I[76,[\"185\",\"static/chunks/app/layout-b51a0ad6cf0fab32.js\"],\"ThemeSwitcher\"]\n10:I[1060,[],\"\"]\n8:[\"slug\",\"fldtype\",\"d\"]\nb:{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"}\nc:{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"}\nd:{\"display\":\"inline-block\"}\ne:{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0}\n11:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L4\",null,{\"buildId\":\"1AXbOSjeAIWogq940gTKm\",\"assetPrefix\":\"/test\",\"urlParts\":[\"\",\"fldtype\"],\"initialTree\":[\"\",{\"children\":[\"(blog)\",{\"children\":[[\"slug\",\"fldtype\",\"d\"],{\"children\":[\"__PAGE__?{\\\"slug\\\":\\\"fldtype\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"(blog)\",{\"children\":[[\"slug\",\"fldtype\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L5\",\"$L6\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/test/_next/static/css/f8ca774482f3c2cc.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]]],null],null]},[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(blog)\",\"children\",\"$8\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/test/_next/static/css/ce90c4206395b4a9.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"container px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"lg:flex py-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sidebar overflow-x-visible lg:border-r lg:overflow-y-scroll py-4 min-w-80 lg:w-1/5\",\"children\":[\"$\",\"nav\",null,{\"children\":[[\"$\",\"input\",null,{\"id\":\"ac-toc\",\"type\":\"checkbox\",\"className\":\"peer/toc hidden\"}],[\"$\",\"label\",null,{\"htmlFor\":\"ac-toc\",\"className\":\"   accodiontoc mb-1   relative before:absolute after:absolute    z-10 after:z-11 before:z-12   peer-checked/toc:hover:after:-rotate-90   peer-checked/toc:bg-[#333]   peer-checked/toc:text-white   peer-checked/toc:before:bg-white   peer-checked/toc:after:bg-white   after:duration-300   py-2 pl-4 pr-10    text-xs font-bold   border border-solid rounded   border-white hover:border-[#bdc1c4]   inline-block   text-[#7a8288] hover:text-white   hover:bg-[#333]   before:content-[''] after:content-['']   before:w-2.5 before:h-0.5 after:w-0.5 after:h-2.5   before:right-4 before:top-4 after:right-5  after:top-3   before:bg-[#7a8288] after:bg-[#7a8288]   hover:after:bg-white hover:before:bg-white   lg:hidden   \",\"children\":\"メニュー\"}],[\"$\",\"div\",null,{\"className\":\"hidden lg:block peer-checked/toc:block mt-8 lg:mt-4\",\"children\":[\"$\",\"section\",null,{\"children\":[[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/helloworld\",\"className\":\"hover:underline\",\"children\":\"Hello, World!と表示させる\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/msgbox\",\"className\":\"hover:underline\",\"children\":\"MsgBox関数\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/inputbox\",\"className\":\"hover:underline\",\"children\":\"InputBox関数\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/array\",\"className\":\"hover:underline\",\"children\":\"配列(1) 配列の作り方\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/filter\",\"className\":\"hover:underline\",\"children\":\"配列(2) 配列の操作\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/rename\",\"className\":\"hover:underline\",\"children\":\"ファイル名の頭に日付を加える\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/fso\",\"className\":\"hover:underline\",\"children\":\"FileSystemObjectオブジェクト\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/path\",\"className\":\"hover:underline\",\"children\":\"ファイル名、パス名を取得する\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/file\",\"className\":\"hover:underline\",\"children\":\"File、Folder、Driveオブジェクト\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/filelist\",\"className\":\"hover:underline\",\"children\":\"ファイル一覧を取得する\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/textstream\",\"className\":\"hover:underline\",\"children\":\"TextStreamオブジェクト\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/mdb1\",\"className\":\"hover:underline\",\"children\":\"Access形式データベースへの接続（1）\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/mdb2\",\"className\":\"hover:underline\",\"children\":\"Access形式データベースへの接続（2）\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/stream\",\"className\":\"hover:underline\",\"children\":\"Streamオブジェクト\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/adox\",\"className\":\"hover:underline\",\"children\":\"ADOXの説明\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/mnist\",\"className\":\"hover:underline\",\"children\":\"バイナリファイルを読む\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/fldtype\",\"className\":\"hover:underline\",\"children\":\"ADOのデータ型\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/class\",\"className\":\"hover:underline\",\"children\":\"クラスを自作する\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/calender1\",\"className\":\"hover:underline\",\"children\":\"カレンダー計算(1) \"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/encoder\",\"className\":\"hover:underline\",\"children\":\"VBScriptの暗号化\"}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"h3\",null,{\"className\":\"text-lg mb-3 leading-snug\",\"children\":[\"$\",\"a\",null,{\"href\":\"/test/calender2\",\"className\":\"hover:underline\",\"children\":\"カレンダー計算(2) \"}]}]}]]}]}]]}]}],[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(blog)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]]}]}]}]],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/test/_next/static/css/8579c4287a58b810.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"180x180\",\"href\":\"/test/favicon/apple-touch-icon.png\"}],[\"$\",\"link\",null,{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"32x32\",\"href\":\"/test/favicon/favicon-32x32.png\"}],[\"$\",\"link\",null,{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"16x16\",\"href\":\"/test/favicon/favicon-16x16.png\"}],[\"$\",\"link\",null,{\"rel\":\"manifest\",\"href\":\"/test/favicon/site.webmanifest\"}],[\"$\",\"link\",null,{\"rel\":\"mask-icon\",\"href\":\"/test/favicon/safari-pinned-tab.svg\",\"color\":\"#000000\"}],[\"$\",\"link\",null,{\"rel\":\"shortcut icon\",\"href\":\"/test/favicon/favicon.ico\"}],[\"$\",\"meta\",null,{\"name\":\"msapplication-TileColor\",\"content\":\"#000000\"}],[\"$\",\"meta\",null,{\"name\":\"msapplication-config\",\"content\":\"/test/favicon/browserconfig.xml\"}],[\"$\",\"meta\",null,{\"name\":\"theme-color\",\"content\":\"#000\"}],[\"$\",\"link\",null,{\"rel\":\"alternate\",\"type\":\"application/rss+xml\",\"href\":\"/test/feed.xml\"}]]}],[\"$\",\"body\",null,{\"className\":\"__className_d8d0ad dark:bg-slate-900 dark:text-slate-400\",\"children\":[[\"$\",\"$La\",null,{}],[\"$\",\"header\",null,{\"className\":\"border-b border-neutral-200 dark:bg-stars\",\"children\":[\"$\",\"div\",null,{\"className\":\"container px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"py-16 flex flex-col lg:flex-row items-center\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-2xl lg:text-4xl font-bold tracking-tight lg:tracking-tighter leading-tight lg:w-1/3\",\"children\":[[\"$\",\"a\",null,{\"href\":\"/test\",\"className\":\"hover:underline\",\"children\":\"VBScriptさんま屋\"}],\".\"]}],[\"$\",\"h4\",null,{\"className\":\"text-center text-lg\",\"children\":\"VBScriptの個人的なメモです (´・ω・`)\"}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"min-h-1/2\",\"children\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$b\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$c\",\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":\"$d\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$e\",\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}],[\"$\",\"footer\",null,{\"className\":\"bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800\",\"children\":[\"$\",\"div\",null,{\"className\":\"container px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"py-28 flex flex-col lg:flex-row items-center\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2\",\"children\":\"Statically Generated with Next.js.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates\",\"className\":\"mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0\",\"children\":\"Read Documentation\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/sammaya164/test\",\"className\":\"mx-3 font-bold hover:underline\",\"children\":\"View on GitHub\"}]]}]]}]}]}]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$Lf\"],\"globalErrorComponent\":\"$10\",\"missingSlots\":\"$W11\"}]\n"])</script><script>self.__next_f.push([1,"12:T208a,"])</script><script>self.__next_f.push([1,"\u003cnav class=\"toc\"\u003e\u003col class=\"toc-level toc-level-1\"\u003e\u003cli class=\"toc-item toc-item-h2\"\u003e\u003ca class=\"toc-link toc-link-h2\" href=\"#概要\"\u003e概要\u003c/a\u003e\u003c/li\u003e\u003cli class=\"toc-item toc-item-h2\"\u003e\u003ca class=\"toc-link toc-link-h2\" href=\"#データ型の一覧\"\u003eデータ型の一覧\u003c/a\u003e\u003c/li\u003e\u003cli class=\"toc-item toc-item-h2\"\u003e\u003ca class=\"toc-link toc-link-h2\" href=\"#各データ型のdefinedsizeを確認してみる\"\u003e各データ型のDefinedSizeを確認してみる\u003c/a\u003e\u003c/li\u003e\u003c/ol\u003e\u003c/nav\u003e\u003ch2 id=\"概要\"\u003e概要\u003c/h2\u003e\n\u003ch2 id=\"データ型の一覧\"\u003eデータ型の一覧\u003c/h2\u003e\n\u003cp\u003e使用頻度が高いのは下表の太字かな。\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e定数\u003c/th\u003e\n\u003cth\u003e値\u003c/th\u003e\n\u003cth\u003eサイズ\u003c/th\u003e\n\u003cth\u003e説明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eadEmpty\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eEMPTY?\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadSmallInt\u003c/td\u003e\n\u003ctd\u003e2\u003c/td\u003e\n\u003ctd\u003e2バイト\u003c/td\u003e\n\u003ctd\u003e符号付き整数\u003cbr/\u003e(VBScriptのIntegerに相当)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadInteger\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e3\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e4バイト\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e符号付き整数\u003cbr/\u003e(VBScriptのLongに相当)\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadSIngle\u003c/td\u003e\n\u003ctd\u003e4\u003c/td\u003e\n\u003ctd\u003e4バイト\u003c/td\u003e\n\u003ctd\u003e単精度浮動小数点型\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadDouble\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e5\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e8バイト\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e倍精度浮動小数点型\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadCurrency\u003c/td\u003e\n\u003ctd\u003e6\u003c/td\u003e\n\u003ctd\u003e8バイト\u003c/td\u003e\n\u003ctd\u003e通貨型\u003cbr/\u003e(小数点以下4桁の固定小数点型)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadDate\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e7\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e8バイト\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e日付/時刻型\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadBSTR\u003c/td\u003e\n\u003ctd\u003e8\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eUnicode文字列\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadError\u003c/td\u003e\n\u003ctd\u003e10\u003c/td\u003e\n\u003ctd\u003e4バイト\u003c/td\u003e\n\u003ctd\u003eエラーコード\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadBoolean\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e11\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e2バイト\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003eブール値\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadDecimal\u003c/td\u003e\n\u003ctd\u003e14\u003c/td\u003e\n\u003ctd\u003e16バイト\u003c/td\u003e\n\u003ctd\u003e正確な数値\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadTinyInt\u003c/td\u003e\n\u003ctd\u003e16\u003c/td\u003e\n\u003ctd\u003e1バイト\u003c/td\u003e\n\u003ctd\u003e符号付き整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadUnsignedTinyInt\u003c/td\u003e\n\u003ctd\u003e17\u003c/td\u003e\n\u003ctd\u003e1バイト\u003c/td\u003e\n\u003ctd\u003e符号なし整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadUnsignedSmallInt\u003c/td\u003e\n\u003ctd\u003e18\u003c/td\u003e\n\u003ctd\u003e2バイト\u003c/td\u003e\n\u003ctd\u003e符号なし整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadUnsignedInt\u003c/td\u003e\n\u003ctd\u003e19\u003c/td\u003e\n\u003ctd\u003e4バイト\u003c/td\u003e\n\u003ctd\u003e符号なし整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadBigInt\u003c/td\u003e\n\u003ctd\u003e20\u003c/td\u003e\n\u003ctd\u003e8バイト\u003c/td\u003e\n\u003ctd\u003e符号付き整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadUnsignedBigInt\u003c/td\u003e\n\u003ctd\u003e21\u003c/td\u003e\n\u003ctd\u003e8バイト\u003c/td\u003e\n\u003ctd\u003e符号なし整数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadFileTime\u003c/td\u003e\n\u003ctd\u003e64\u003c/td\u003e\n\u003ctd\u003e8バイト\u003c/td\u003e\n\u003ctd\u003e1601年1月1日からの時間\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadGUID\u003c/td\u003e\n\u003ctd\u003e72\u003c/td\u003e\n\u003ctd\u003e16バイト\u003c/td\u003e\n\u003ctd\u003eGUID、オートナンバー型\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadBinary\u003c/td\u003e\n\u003ctd\u003e128\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eバイナリ値\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadChar\u003c/td\u003e\n\u003ctd\u003e129\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e文字列\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadWChar\u003c/td\u003e\n\u003ctd\u003e130\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eUnicode文字列\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadNumeric\u003c/td\u003e\n\u003ctd\u003e131\u003c/td\u003e\n\u003ctd\u003e19バイト\u003c/td\u003e\n\u003ctd\u003e正確な数値\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadUserDefined\u003c/td\u003e\n\u003ctd\u003e132\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eユーザ定義\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadDBDate\u003c/td\u003e\n\u003ctd\u003e133\u003c/td\u003e\n\u003ctd\u003e6バイト\u003c/td\u003e\n\u003ctd\u003e日付\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadDBTime\u003c/td\u003e\n\u003ctd\u003e134\u003c/td\u003e\n\u003ctd\u003e6バイト\u003c/td\u003e\n\u003ctd\u003e時刻\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadDBTimeStamp\u003c/td\u003e\n\u003ctd\u003e135\u003c/td\u003e\n\u003ctd\u003e16バイト\u003c/td\u003e\n\u003ctd\u003e日付/時刻\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadChapter\u003c/td\u003e\n\u003ctd\u003e136\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eチャプター値\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadPropVariant\u003c/td\u003e\n\u003ctd\u003e138\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003ePROPVARIANT\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadVarNumeric\u003c/td\u003e\n\u003ctd\u003e139\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e数値\u003cbr/\u003e(Parameterオブジェクト)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadVarChar\u003c/td\u003e\n\u003ctd\u003e200\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e文字列\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadLongVarChar\u003c/td\u003e\n\u003ctd\u003e201\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e長い文字列\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadVarWChar\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e202\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003eUnicode文字列\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eadLongVarWChar\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e203\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e長いUnicode文字列\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadVarBinary\u003c/td\u003e\n\u003ctd\u003e204\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eバイナリ値\u003cbr/\u003e(Parameterオブジェクト)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eadLongVarBinary\u003c/td\u003e\n\u003ctd\u003e205\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003ctd\u003eロングバイナリ値\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2 id=\"各データ型のdefinedsizeを確認してみる\"\u003e各データ型のDefinedSizeを確認してみる\u003c/h2\u003e\n\u003cp\u003e動作概要:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eレコードセットを作成\u003c/li\u003e\n\u003cli\u003eレコードセットが閉じた状態で各データ型のフィールドを追加\u003c/li\u003e\n\u003cli\u003eレコードセットを開く\u003c/li\u003e\n\u003cli\u003eレコードが無いとフィールドにアクセスできないので、空のレコードを作成\u003c/li\u003e\n\u003cli\u003eフィールドにアクセスしてDefinedSizeを取得\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-vbs\"\u003e\u003cspan class=\"hljs-keyword\"\u003eDim\u003c/span\u003e rs     \u003cspan class=\"hljs-comment\"\u003e'レコードセットオブジェクト\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eDim\u003c/span\u003e flds   \u003cspan class=\"hljs-comment\"\u003e'フィールドコレクション\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eDim\u003c/span\u003e fld    \u003cspan class=\"hljs-comment\"\u003e'フィールドオブジェクト\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eDim\u003c/span\u003e buf    \u003cspan class=\"hljs-comment\"\u003e'結果表示用の文字列\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003eSet\u003c/span\u003e rs   = \u003cspan class=\"hljs-built_in\"\u003eCreateObject\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"ADODB.RecordSet\"\u003c/span\u003e)\n\u003cspan class=\"hljs-keyword\"\u003eSet\u003c/span\u003e flds = rs.Fields\n\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"SmallInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Integer\"\u003c/span\u003e , \u003cspan class=\"hljs-number\"\u003e3\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Single\"\u003c/span\u003e  , \u003cspan class=\"hljs-number\"\u003e4\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Double\"\u003c/span\u003e  , \u003cspan class=\"hljs-number\"\u003e5\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Currency\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e6\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Date\"\u003c/span\u003e    , \u003cspan class=\"hljs-number\"\u003e7\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"BSTR\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e8\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Error\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Boolean\"\u003c/span\u003e , \u003cspan class=\"hljs-number\"\u003e11\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Decimal\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e14\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"TinyInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e16\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"UnsignedTinyInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e17\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"UnsignedSmallInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e18\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"UnsignedInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e19\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"BigInt\"\u003c/span\u003e  , \u003cspan class=\"hljs-number\"\u003e20\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"UnsignedBigInt\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e21\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"FileTime\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e64\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"GUID\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e72\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"Numeric\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e131\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"DBDate\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e133\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"DBTime\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e134\u003c/span\u003e\nflds.Append \u003cspan class=\"hljs-string\"\u003e\"DBTimeStamp\"\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e135\u003c/span\u003e\n\nrs.Open   \u003cspan class=\"hljs-comment\"\u003e'開く\u003c/span\u003e\nrs.AddNew \u003cspan class=\"hljs-comment\"\u003e'空のレコードを1件作成\u003c/span\u003e\nrs.Update \n\u003cspan class=\"hljs-keyword\"\u003eFor\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eEach\u003c/span\u003e fld \u003cspan class=\"hljs-keyword\"\u003eIn\u003c/span\u003e flds\n    buf = buf \u0026#x26; fld.Name \u0026#x26; \u003cspan class=\"hljs-string\"\u003e\", \"\u003c/span\u003e \u0026#x26; fld.DefinedSize \u0026#x26; vbCr\n\u003cspan class=\"hljs-keyword\"\u003eNext\u003c/span\u003e\nrs.Close  \u003cspan class=\"hljs-comment\"\u003e'閉じる\u003c/span\u003e\nMsgbox buf\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eadEmptyやadChapterなどはフィールドの作り方がわかりませんでした。\u003c/p\u003e\n\u003ch3 id=\"実行結果\"\u003e実行結果\u003c/h3\u003e\n\u003cp\u003e\u003cimg src=\"/vbscript/assets/images/fldtype.jpg\" alt=\"データ型のDefinedSize\"\u003e\u003c/p\u003e"])</script><script>self.__next_f.push([1,"6:[\"$\",\"article\",null,{\"className\":\"mb-32 pt-6 lg:px-6\",\"children\":[[[\"$\",\"h1\",null,{\"className\":\"text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-left\",\"children\":\"ADOのデータ型\"}],[\"$\",\"div\",null,{\"className\":\"mb-6 text-lg\",\"children\":[\"$\",\"time\",null,{\"dateTime\":\"2024-10-31T00:00:00.000Z\",\"children\":\"2024/10/31\"}]}]],[\"$\",\"div\",null,{\"className\":\"markdown-styles_markdown__ORfR8\",\"dangerouslySetInnerHTML\":{\"__html\":\"$12\"}}]]}]\nf:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"ADOのデータ型 | VBScriptさんま屋\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"VBScriptの個人的なメモです\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"ADOのデータ型\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"VBScriptの個人的なメモです\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:image\",\"content\":\"https://www.sammaya.jp/test/assets/img/stars.jpg\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:title\",\"content\":\"ADOのデータ型\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:description\",\"content\":\"VBScriptの個人的なメモです\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:image\",\"content\":\"https://www.sammaya.jp/test/assets/img/stars.jpg\"}]]\n5:null\n"])</script></body></html>
